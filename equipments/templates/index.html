@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+<h2>these are the gym members : </h2>
+<ul> {% for member in members %}
+    <li>{{member.first_name}} {{member.last_name}}, he began in : {{member.start_date}} , until {{member.end_date}}</li>
+    {% endfor %}
+</ul>
+</div>
+</body>
+</html>
